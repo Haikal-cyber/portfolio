@@ -1,3 +1,71 @@
+## HOW TO RUN
+
+
+> Semua "perintah" di bawah ditulis di **Terminal** (Mac) atau **Command Prompt / PowerShell** (Windows), lalu tekan **Enter**.
+
+### 1. Install Node.js
+
+Node.js adalah program yang dibutuhkan untuk menjalankan website ini.
+
+1. Buka https://nodejs.org
+2. Klik tombol hijau besar bertuliskan **LTS**, lalu download.
+3. Buka file hasil download, lalu klik **Next** terus sampai selesai.
+
+Cek apakah berhasil: di Terminal ketik `node -v` lalu Enter. Kalau muncul angka (misalnya `v20.10.0`), berarti sukses.
+
+### 2. Install Git
+
+1. Buka https://git-scm.com/downloads
+2. Download sesuai sistem operasi, lalu install (klik Next terus sampai selesai).
+
+### 3. Clone (menyalin) project ke komputer
+
+Di Terminal, jalankan perintah ini:
+
+```bash
+git clone https://github.com/Haikal-cyber/portfolio.git
+```
+
+Setelah selesai, akan muncul folder baru bernama `portfolio`.
+
+### 4. Masuk ke folder project
+
+```bash
+cd portfolio
+```
+
+### 5. Install bahan-bahan yang dibutuhkan
+
+```bash
+npm install
+```
+
+Tunggu sampai selesai (bisa beberapa menit, jangan ditutup).
+
+### 6. Jalankan website
+
+```bash
+npm run dev
+```
+
+Kalau muncul tulisan `Local: http://localhost:5173/`, berarti website sudah berjalan.
+
+### 7. Buka website di browser
+
+Buka Chrome/Safari, lalu ketik alamat ini di kolom URL:
+
+```
+http://localhost:5173
+```
+
+Website akan muncul. 🎉
+
+### Cara menghentikan
+
+Di Terminal, tekan **Ctrl + C**. Website akan berhenti.
+
+> Kalau ada langkah yang error, copy-paste pesan errornya lalu tanyakan ke pembuat project.
+
 ## Tech Stack
 
 - Vite 5 + React 18
