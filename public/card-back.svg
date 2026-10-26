@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="900" viewBox="0 0 640 900">
+  <rect width="640" height="900" fill="#ffffff"/>
+  <text x="320" y="420" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#111111">Business Analysis</text>
+  <text x="320" y="470" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#111111">System Analysis</text>
+  <text x="320" y="520" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#111111">Enterprise Architecture</text>
+  <text x="320" y="868" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="15" fill="#888888">Open to opportunities</text>
+</svg>
