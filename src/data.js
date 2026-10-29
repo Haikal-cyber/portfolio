@@ -4,72 +4,81 @@ export const nav = {
 };
 
 export const hero = {
-  tag: "information systems · universitas brawijaya",
-  headlineLines: ["aligning business,", "process & technology."],
+  eyebrow: "hey, i'm",
+  name: "Azzahra Helga Voleta",
+  role: "information systems graduate · universitas brawijaya",
+  tag: "open to opportunities",
+  headlineLines: ["let's get to", "know me."],
   intro:
-    "hi, i'm Azzahra Helga Voleta — I help organizations connect business needs, processes, and technology through enterprise architecture, business analysis, and system analysis.",
+    "an information systems graduate who turns messy business needs into clear, structured solutions — through business analysis, enterprise architecture, and business process management.",
   caption: "hello, i'm Voleta →",
   cta: "get in touch",
-  info: "open to opportunities in EA, BA & related areas",
-  label: [
-    { label: "name", value: "Azzahra Helga Voleta" },
-    { label: "class", value: "Enterprise Architecture" },
-    { label: "roll no.", value: "Business & System Analysis" },
-  ],
+  info: "let's build something structured together",
+  chips: ["business analyst", "enterprise architecture", "system analyst"],
+  hint: "scroll to open the book ↓",
 };
 
 export const about = {
   title: "about",
   caption: "who i am",
   paragraphs: [
-    "I'm an Information Systems graduate from Universitas Brawijaya with a focus on enterprise architecture, business analysis, and system analysis. I enjoy looking at technology not only from a system perspective, but also from a broader business and organizational perspective.",
-    "My experience has shaped how I understand the alignment between business needs, processes, and technology — and how that alignment supports organizational goals. I'm currently deepening my knowledge in enterprise architecture while continuing to build my capabilities in business and system analysis.",
+    "I am an Information Systems graduate with an interest in business analysis, Enterprise Architecture, and business process management.",
+    "Through my academic projects and internship at Telkom Indonesia's Group Corporate Transformation, I gained experience in analyzing business contexts, applying architecture reference models, and exploring business processes to understand how organizations align their business needs, strategies, and capabilities.",
   ],
 };
 
-export const focus = {
-  title: "focus",
-  caption: "areas of interest",
-  areas: [
+export const education = {
+  title: "education",
+  caption: "where i studied",
+  items: [
     {
-      icon: "network",
-      title: "enterprise architecture",
-      description:
-        "mapping how business, processes, and technology fit together to support organizational goals.",
+      icon: "graduation-cap",
+      title: "brawijaya university",
+      program: "majoring in information system",
+      period: "aug 2022 – jul 2026",
+      note: "cumulative gpa 3.75 / 4.00",
     },
     {
-      icon: "workflow",
-      title: "business analysis",
-      description:
-        "understanding business processes and translating organizational needs into clear, structured requirements.",
-    },
-    {
-      icon: "puzzle",
-      title: "system analysis",
-      description:
-        "breaking down complex problems and turning them into structured, practical solutions.",
+      icon: "book-open",
+      title: "sma negeri 1 surakarta",
+      program: "math and science program",
+      period: "jul 2019 – may 2022",
     },
   ],
 };
 
 export const experience = {
-  title: "experience",
+  title: "work experience",
   caption: "where i've worked",
-  role: "business analyst intern",
-  company: "telkom indonesia",
-  type: "internship",
-  description:
-    "Exposed to enterprise architecture and business analysis practices — understanding business processes, analyzing organizational needs, and translating them into structured architectural perspectives. This strengthened my interest in seeing technology not only from a system perspective, but also from a broader business and organizational perspective.",
+  items: [
+    {
+      role: "business analyst intern",
+      org: "telkom indonesia · group corporate transformation",
+      period: "2025",
+      description:
+        "within the Group Business Process division, gained experience in Enterprise Architecture and business process management. applied generic architecture reference models to two Telkom case studies, explored business process classification through the APQC framework, and prepared and presented project analyses and progress updates to the Group Operating Model team.",
+      tags: ["enterprise architecture", "APQC", "bpm"],
+      achievement:
+        "best mentee — outstanding performance category, digistar class intern 2025 · batch 3",
+    },
+    {
+      role: "basic database practicum assistant",
+      org: "faculty of computer science · universitas brawijaya",
+      period: "feb 2024 – may 2024",
+      description:
+        "supported over 30 students per session in understanding core database concepts. facilitated interactive lab discussions, provided structured feedback on assignments, and submitted detailed reports. also collaborated with fellow assistants to ensure lab readiness and improve student outcomes.",
+      tags: ["ERD", "SQL", "normalization & relational design"],
+    },
+  ],
 };
 
 export const footer = {
-  headline: "let's build something structured.",
-  body: "open to opportunities in enterprise architecture, business analysis, and related areas.",
+  headline: "thanks for scrolling all the way here!",
+  body: "I appreciate your time and interest in getting to know me through this portfolio. feel free to reach out — I'm open for opportunities, collaborations, or simply a good conversation.",
   cta: "say hello",
   copyright: "© 2026 azzahra helga voleta",
 };
 
-// TODO: replace with your real contact email / links.
 export const contact = {
-  email: "hello@example.com",
+  linkedin: "https://www.linkedin.com/in/azzahrahelgavoleta/",
 };

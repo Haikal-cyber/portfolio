@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <h2 className="footer__headline">{footer.headline}</h2>
         <p className="footer__body">{footer.body}</p>
-        <a className="pill" href={`mailto:${contact.email}`}>
+        <a className="pill" href={contact.linkedin} target="_blank" rel="noreferrer">
           {footer.cta}
         </a>
         <div className="footer__bottom">

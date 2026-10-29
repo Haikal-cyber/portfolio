@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import { nav } from "../data.js";
+import { nav, contact } from "../data.js";
 
 export default function Nav() {
   return (
@@ -8,7 +8,7 @@ export default function Nav() {
         <a href="#top" className="nav__brand" aria-label={nav.brandLabel}>
           <Sparkles size={32} aria-hidden="true" />
         </a>
-        <a className="pill" href="#contact">
+        <a className="pill" href={contact.linkedin} target="_blank" rel="noreferrer">
           {nav.cta}
         </a>
       </div>
