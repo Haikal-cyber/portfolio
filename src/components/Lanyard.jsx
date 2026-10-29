@@ -447,9 +447,13 @@ const paintStrap = (canvas, image, color) => {
     return along / across;
   }
   const ink = luminance(color) > 0.5 ? [0, 0, 0] : [1, 1, 1];
-  ctx.fillStyle = toCss(ink, 0.05);
-  for (let y = 0; y < along; y += 4) ctx.fillRect(0, y, across, 1);
-  ctx.fillStyle = toCss(ink, 0.2);
+  ctx.fillStyle = toCss(ink, 0.11);
+  for (let y = 0; y < along; y += 4) ctx.fillRect(0, y, across, 1.5);
+  ctx.fillStyle = toCss([1, 1, 1], 0.07);
+  for (let y = 2; y < along; y += 4) ctx.fillRect(0, y, across, 1);
+  ctx.fillStyle = toCss(ink, 0.07);
+  for (let x = 0; x < across; x += 3) ctx.fillRect(x, 0, 1, along);
+  ctx.fillStyle = toCss(ink, 0.28);
   for (let y = 0; y < along; y += 14) {
     ctx.fillRect(across * 0.075, y, 2, 8);
     ctx.fillRect(across * 0.925 - 2, y, 2, 8);
@@ -832,8 +836,8 @@ const Lanyard = ({
     const bandMaterial = new THREE.MeshPhysicalMaterial({
       map: strapTexture,
       normalMap: weave,
-      normalScale: new THREE.Vector2(0.7, 0.7),
-      roughness: 0.68,
+      normalScale: new THREE.Vector2(1.35, 1.35),
+      roughness: 0.78,
       sheen: 1,
       sheenRoughness: 0.42,
       sheenColor: new THREE.Color(0.32, 0.32, 0.34),

@@ -64,6 +64,7 @@ export const projects = [
     role: "system analyst & project manager",
     link: "https://skinpathoscan.satrio.io/",
     imgDir: "project 4",
+    photosRow: true,
     images: [
       "Salinan dari Portfolio Azzahra Helga Voleta (5).jpg",
       "Salinan dari Portfolio Azzahra Helga Voleta (6).jpg",

@@ -33,14 +33,14 @@ export const education = {
   items: [
     {
       icon: "graduation-cap",
-      title: "brawijaya university",
+      title: "Brawijaya University",
       program: "majoring in information system",
       period: "aug 2022 – jul 2026",
       note: "cumulative gpa 3.75 / 4.00",
     },
     {
       icon: "book-open",
-      title: "sma negeri 1 surakarta",
+      title: "SMA Negeri 1 Surakarta",
       program: "math and science program",
       period: "jul 2019 – may 2022",
     },

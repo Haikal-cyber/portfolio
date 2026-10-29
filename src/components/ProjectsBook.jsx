@@ -4,11 +4,8 @@ import { projects, bookCopy } from "../projects.js";
 import "./ProjectsBook.css";
 
 const LEAVES = [{ front: "cover", back: 0 }];
-for (let i = 0; i < projects.length; i++) {
-  LEAVES.push({
-    front: { photos: i },
-    back: i < projects.length - 1 ? i + 1 : "thanks",
-  });
+for (let i = 0; i < projects.length - 1; i++) {
+  LEAVES.push({ front: { photos: i }, back: i + 1 });
 }
 const L = LEAVES.length;
 const INTRO = 0.05;
@@ -50,7 +47,7 @@ function PhotosContent({ p, onPhoto }) {
         <span className="pg__role">artifacts</span>
       </div>
       {p.images?.length ? (
-        <div className="pg__photos">
+        <div className={`pg__photos${p.photosRow ? " pg__photos--row" : ""}`}>
           {p.images.map((f, i) => {
             const src = `/image%20project/${encodeURIComponent(p.imgDir)}/${encodeURIComponent(f)}`;
             const alt = `${p.title} — photo ${i + 1}`;
@@ -87,12 +84,7 @@ function Page({ p, side, onPhoto }) {
   return (
     <div className={`pg pg--${side}`}>
       <div className="pg__rules" />
-      {p === "thanks" ? (
-        <div className="pg__content pg__content--thanks">
-          <h3 className="pg__thanks">{bookCopy.thanks}</h3>
-          <span className="pg__hand">{bookCopy.thanksNote}</span>
-        </div>
-      ) : typeof p === "number" ? (
+      {typeof p === "number" ? (
         <PageContent p={projects[p]} />
       ) : p ? (
         <PhotosContent p={projects[p.photos]} onPhoto={onPhoto} />
@@ -176,12 +168,7 @@ export default function ProjectsBook() {
     };
   }, []);
 
-  const label =
-    spread === 0
-      ? "closed"
-      : spread === L
-      ? "thanks"
-      : projects[spread - 1].n;
+  const label = spread === 0 ? "closed" : projects[spread - 1].n;
 
   return (
     <section className="pbook" id="projects" ref={sectionRef} aria-label="Projects">
@@ -207,7 +194,11 @@ export default function ProjectsBook() {
           <div className="book__plate book__plate--right" />
           <div className="book__plate book__plate--left" />
           <div className="book__base">
-            <Page p={null} side="right" />
+            <Page
+              p={{ photos: projects.length - 1 }}
+              side="right"
+              onPhoto={setPreview}
+            />
           </div>
 
           {LEAVES.map((leaf, i) => (

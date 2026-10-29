@@ -1,6 +1,6 @@
 .pbook {
   position: relative;
-  height: 1140vh;
+  height: 1040vh;
 }
 .pbook__stage {
   position: sticky;
@@ -329,6 +329,22 @@
   flex: 1;
   min-height: 0;
 }
+.pg__photos--row {
+  flex-direction: row;
+  align-items: center;
+}
+.pg__photos--row .pg__photo {
+  min-width: 0;
+  height: auto;
+  transform: rotate(var(--pr, 0deg)) scale(1.2);
+}
+.pg__photos--row .pg__photo img {
+  flex: none;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
 .pg__photo {
   position: relative;
   flex: 1;
@@ -380,24 +396,7 @@
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
-.pg__content--thanks {
-  justify-content: center;
-  inset: 1.5em;
-  gap: 0.9em;
-}
-.pg__thanks {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.7em;
-  line-height: 1.15;
-  color: var(--color-cocoa-ink);
-}
-.pg__hand {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.1em;
-  color: var(--color-marker-orange);
-}
+
 
 /* ---------- Lightbox ---------- */
 .lightbox {
