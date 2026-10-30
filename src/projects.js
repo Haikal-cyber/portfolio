@@ -179,13 +179,11 @@ export const projects = [
 
 export const bookCopy = {
   intro: [
-    "my portfolio doesn't have any distractions. just projects.",
-    "it shows how i think.\nit breaks complex business problems down without making them feel complicated.\nand my notebook? it opens as you scroll.",
+    "a little space for the work I've done and the ideas I've explored.",
   ],
-  handwritten: "it reads like paper.\nand feels like a friend.",
   title: "projects",
-  hint: "scroll to open the book",
-  thanks: "thanks for scrolling all the way here!",
+  hint: "Please scroll to open the book!",
+  thanks: "Thanks for scrolling all the way here!",
   // thanksNote: "say hello — let's talk.",
   name: "Voleta",
   className: "IS",

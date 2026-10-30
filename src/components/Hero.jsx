@@ -33,7 +33,6 @@ export default function Hero() {
               </span>
             ))}
           </h1>
-          <p className="hero__intro">{hero.intro}</p>
           <span className="handwritten" aria-label={hero.caption}>
             {[...hero.caption.replace(/\s*→$/, "")].map((ch, i) => (
               <span
@@ -49,6 +48,7 @@ export default function Hero() {
               {"\u00A0→"}
             </span>
           </span>
+          <p className="hero__intro">{hero.intro}</p>
           <div className="hero__cta">
             <a className="pill" href="#contact">
               {hero.cta}

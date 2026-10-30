@@ -392,6 +392,9 @@
   font-size: 18px;
   line-height: 1.6;
   color: var(--color-charcoal);
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
 }
 .ae__list {
   display: flex;
@@ -500,7 +503,7 @@
   color: var(--color-burnt-sienna);
 }
 
-/* ---------- Experience ---------- */
+/* ---------- Work Experience ---------- */
 .exp__list {
   display: flex;
   flex-direction: column;
@@ -558,6 +561,10 @@
   font-size: 18px;
   line-height: 1.6;
   color: var(--color-charcoal);
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: left;
+
 }
 
 /* ---------- Footer ---------- */
