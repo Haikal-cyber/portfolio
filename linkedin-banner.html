@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>linkedin banner — azzahra helga voleta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400..700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --cream: #fdfbf9;
+    --dew: #f7efe9;
+    --charcoal: #171717;
+    --cocoa: #2b1a07;
+    --orange: #ff6f1e;
+    --sienna: #ce500a;
+    --sky: #3b82f6;
+    --pink: #ff66cf;
+    --sprout: #22c55e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+  body {
+    background: #e9e6e2;
+    display: grid;
+    place-items: center;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* ── the banner: exact linkedin size ─────────────────────── */
+  .banner {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background-color: var(--cream);
+    /* faint dot-grid notebook paper */
+    background-image: radial-gradient(rgba(23, 23, 23, 0.055) 1.1px, transparent 1.1px);
+    background-size: 26px 26px;
+    background-position: 13px 13px;
+  }
+
+  /* ── left copy block ─────────────────────────────────────── */
+  .copy {
+    position: absolute;
+    right: 96px;
+    top: 50px;
+    max-width: 940px;
+    text-align: right;
+  }
+
+  .eyebrow {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--orange);
+    transform: rotate(-1.6deg);
+    transform-origin: right bottom;
+    margin-bottom: 2px;
+  }
+
+  .name {
+    position: relative;
+    display: inline-block;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    color: var(--cocoa);
+  }
+  .name .u {
+    position: absolute;
+    left: 2px;
+    right: -6px;
+    bottom: -14px;
+    height: 12px;
+    width: calc(100% + 6px);
+  }
+  .name .u path {
+    stroke: var(--orange);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    fill: none;
+  }
+
+  .tagline {
+    margin-top: 26px;
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: var(--charcoal);
+    max-width: 620px;
+    margin-left: auto;
+  }
+  .tagline .hl {
+    position: relative;
+    color: var(--sienna);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .tagline .hl::after {
+    content: "";
+    position: absolute;
+    left: -2px; right: -2px; bottom: -2px;
+    height: 7px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='7' viewBox='0 0 120 7' preserveAspectRatio='none'%3E%3Cpath d='M1 4.5 C 18 2.5, 32 5.8, 48 4.2 S 84 2.6, 119 4.8' stroke='%23ff6f1e' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  }
+
+  .chips {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 22px;
+  }
+  .chip {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--charcoal);
+    background: var(--cream);
+    border: 1.5px solid var(--charcoal);
+    border-radius: 999px;
+    padding: 7px 18px;
+    box-shadow: rgba(0, 0, 0, 0.22) 0 1px 2px;
+  }
+  .chip--dot::before {
+    content: "";
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--orange);
+    margin-right: 8px;
+    vertical-align: 1px;
+  }
+
+
+</style>
+</head>
+<body>
+
+<div class="banner">
+
+  <!-- left copy -->
+  <div class="copy">
+    <div class="eyebrow">hey, i'm</div>
+    <h1 class="name">
+      Azzahra Helga Voleta
+      <svg class="u" viewBox="0 0 700 12" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M4 7 C 90 3, 160 9, 250 6.5 S 430 4, 540 7.5 S 660 8.5, 696 6" />
+      </svg>
+    </h1>
+    <p class="tagline">
+      Information Systems graduate turning messy business needs into
+      <span class="hl">clear, structured solutions</span> — business analysis,
+      enterprise architecture &amp; bpm.
+    </p>
+    <div class="chips">
+      <span class="chip">business analyst</span>
+      <span class="chip">enterprise architecture</span>
+      <span class="chip">system analyst</span>
+      <!-- <span class="chip chip--dot">open to opportunities</span> -->
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

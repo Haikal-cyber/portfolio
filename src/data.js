@@ -4,18 +4,18 @@ export const nav = {
 };
 
 export const hero = {
-  eyebrow: "hey, i'm",
-  name: "Azzahra Helga Voleta",
-  role: "information systems graduate · universitas brawijaya",
-  tag: "open to opportunities",
-  headlineLines: ["let's get to", "know me."],
+  tag: "information systems · universitas brawijaya",
+  headlineLines: ["aligning business,", "process & technology."],
   intro:
-    "an information systems graduate who turns messy business needs into clear, structured solutions — through business analysis, enterprise architecture, and business process management.",
+    "hi, i'm Azzahra Helga Voleta — I help organizations connect business needs, processes, and technology through enterprise architecture, business analysis, and system analysis.",
   caption: "hello, i'm Voleta →",
   cta: "get in touch",
-  info: "let's build something structured together",
-  chips: ["business analyst", "enterprise architecture", "system analyst"],
-  hint: "scroll to open the book ↓",
+  info: "open to opportunities in EA, BA & related areas",
+  label: [
+    { label: "name", value: "Azzahra Helga Voleta" },
+    { label: "class", value: "Enterprise Architecture" },
+    { label: "roll no.", value: "Business & System Analysis" },
+  ],
 };
 
 export const about = {
