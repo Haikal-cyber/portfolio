@@ -396,6 +396,11 @@
   text-justify: inter-word;
   text-align-last: left;
 }
+.ae__side {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
 .ae__list {
   display: flex;
   flex-direction: column;
@@ -426,6 +431,49 @@
 }
 .ae__period {
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.ae__skills {
+  padding-top: 0;
+}
+.ae__skills-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-cocoa-ink);
+  margin: 0 0 16px;
+}
+.ae__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ae__skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-charcoal);
+  border-radius: var(--radius-tags);
+  background: var(--color-cream-paper);
+}
+.ae__skill-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  color: var(--color-cocoa-ink);
+}
+.ae__skill-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-charcoal);
+}
+.ae__skill-note {
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
 }
 

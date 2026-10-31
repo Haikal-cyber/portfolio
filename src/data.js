@@ -27,6 +27,31 @@ export const about = {
   ],
 };
 
+export const skills = {
+  title: "technical skills",
+  items: [
+    { icon: "workflow", name: "bizagi modeler" },
+    { icon: "java", name: "java" },
+    {
+      icon: "office",
+      name: "microsoft 365",
+      note: "word · excel · powerpoint · teams · outlook",
+    },
+    {
+      icon: "google",
+      name: "google workspace",
+      note: "gmail · calendar · drive · docs · meet",
+    },
+    { icon: "database", name: "sql", note: "database" },
+    { icon: "odoo", name: "odoo" },
+    { icon: "palette", name: "canva" },
+    { icon: "barchart", name: "power bi" },
+    { icon: "figma", name: "figma" },
+    { icon: "diagram", name: "draw.io" },
+    { icon: "postman", name: "postman" },
+  ],
+};
+
 export const education = {
   title: "Education",
   caption: "Where I Studied",

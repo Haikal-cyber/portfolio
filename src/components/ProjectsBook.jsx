@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Heart, HandMetal } from "lucide-react";
+import { HandMetal } from "lucide-react";
 import { projects, bookCopy } from "../projects.js";
 import "./ProjectsBook.css";
 
@@ -187,7 +187,7 @@ export default function ProjectsBook() {
             </p>
           ))}
           <p className="pbook__handwritten">{bookCopy.handwritten}</p>
-          <Heart className="pbook__heart" aria-hidden="true" />
+          <span className="pbook__scroll">{bookCopy.hint} ↓</span>
         </div>
 
         <div className="book" ref={bookRef}>
@@ -222,8 +222,6 @@ export default function ProjectsBook() {
             <span className="pencil__lead" />
           </div>
         </div>
-
-        <span className="pbook__scroll">{bookCopy.hint} ↓</span>
 
         <div className="pbook__cards">
           {projects.map((p) => (

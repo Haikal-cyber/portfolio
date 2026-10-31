@@ -38,14 +38,10 @@
   color: var(--color-marker-orange);
 }
 .pbook__scroll {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: var(--font-display);
   font-style: italic;
   font-size: 22px;
-  color: var(--color-marker-orange);
+  color: var(--color-burnt-sienna);
   opacity: var(--hint, 1);
   pointer-events: none;
 }
@@ -96,12 +92,6 @@
   max-width: 460px;
   overflow-wrap: break-word;
   color: var(--color-marker-orange);
-}
-.pbook__heart {
-  width: 22px;
-  height: 22px;
-  color: var(--color-burnt-sienna);
-  fill: var(--color-burnt-sienna);
 }
 
 /* ---------- Book ---------- */
