@@ -2,7 +2,6 @@ import { Paperclip, Workflow, Palette, Database } from "lucide-react";
 import { DiJava } from "react-icons/di";
 import {
   SiFigma,
-  SiPostman,
   SiOdoo,
   SiGoogle,
   SiDiagramsdotnet,
@@ -10,6 +9,24 @@ import {
 import { TbBrandOffice } from "react-icons/tb";
 import { BsBarChartSteps } from "react-icons/bs";
 import { about, education, skills } from "../data.js";
+
+function ArchiIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M22 12 17 20.7 7 20.7 2 12 7 3.3 17 3.3Z" />
+      <path d="M2 12h20M7 3.3l10 17.4M17 3.3 7 20.7" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 const skillIcons = {
   workflow: Workflow,
@@ -22,7 +39,7 @@ const skillIcons = {
   barchart: BsBarChartSteps,
   figma: SiFigma,
   diagram: SiDiagramsdotnet,
-  postman: SiPostman,
+  archimate: ArchiIcon,
 };
 
 export default function AboutEducation() {

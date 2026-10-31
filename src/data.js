@@ -48,7 +48,7 @@ export const skills = {
     { icon: "barchart", name: "power bi" },
     { icon: "figma", name: "figma" },
     { icon: "diagram", name: "draw.io" },
-    { icon: "postman", name: "postman" },
+    { icon: "archimate", name: "archimate" },
   ],
 };
 
